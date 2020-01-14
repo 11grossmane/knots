@@ -35,13 +35,14 @@ class DesktopContainer extends Component {
     const {fixed} = this.state
 
     return (
-      <Responsive getWidth={getWidth} minWidth={Responsive.onlyTablet.minWidth}>
+      <Responsive etWidth={getWidth} minWidth={Responsive.onlyTablet.minWidth}>
         <Visibility
           once={false}
           onBottomPassed={this.showFixedMenu}
           onBottomPassedReverse={this.hideFixedMenu}
         >
           <Segment
+            id="home"
             inverted
             textAlign="center"
             style={{minHeight: 700, padding: '1em 0em'}}
@@ -82,19 +83,7 @@ class DesktopContainer extends Component {
                 <Menu.Item position="right"></Menu.Item>
               </Container>
             </Menu>
-            <Container style={{textAlign: 'right'}}>
-              <Button as="a" inverted={!fixed}>
-                Log in
-              </Button>
-              <Button
-                as="a"
-                inverted={!fixed}
-                primary={fixed}
-                style={{marginLeft: '0.5em'}}
-              >
-                Sign Up
-              </Button>
-            </Container>
+
             <HomepageHeading />
           </Segment>
         </Visibility>

@@ -24,10 +24,10 @@ const getWidth = () => {
 }
 
 const HomepageHeading = ({mobile}) => (
-  <Container id="home" text>
+  <Container text>
     <Header
       as="h1"
-      content="Imagine-a-Company"
+      content="The Knot Haven"
       inverted
       style={{
         fontSize: mobile ? '2em' : '4em',
@@ -38,7 +38,7 @@ const HomepageHeading = ({mobile}) => (
     />
     <Header
       as="h2"
-      content="Do whatever you want when you want to."
+      content="Tie Knots, Live Life."
       inverted
       style={{
         fontSize: mobile ? '1.5em' : '1.7em',
@@ -46,6 +46,14 @@ const HomepageHeading = ({mobile}) => (
         marginTop: mobile ? '0.5em' : '1.5em'
       }}
     />
+    <Container style={{textAlign: 'center', marginBottom: '5px'}}>
+      <Button size="large" inverted>
+        Log in
+      </Button>
+      <Button style={{marginLeft: '0.5em'}} size="large" inverted>
+        Sign Up
+      </Button>
+    </Container>
     <Button primary size="huge">
       Get Started
       <Icon name="right arrow" />
