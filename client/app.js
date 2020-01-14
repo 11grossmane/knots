@@ -1,13 +1,12 @@
 import React from 'react'
 
-import {Navbar} from './components'
-import Home from './components/home'
+import Layout from './components/layout'
 import Routes from './routes'
 
 const App = () => {
   return (
     <React.Fragment>
-      <Home />
+      <Layout />
 
       <Routes />
     </React.Fragment>
